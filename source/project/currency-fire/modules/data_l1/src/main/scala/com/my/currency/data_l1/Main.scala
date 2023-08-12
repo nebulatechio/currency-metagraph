@@ -1,4 +1,4 @@
-package com.my.currency.l1
+package com.my.currency.data_l1
 
 import java.util.UUID
 import org.tessellation.BuildInfo
@@ -7,8 +7,10 @@ import org.tessellation.schema.cluster.ClusterId
 
 object Main
     extends CurrencyL1App(
-      "currency-fire-l1",
-      "currency-fire L1 node",
+      "currency-fire-data_l1",
+      "currency-fire data L1 data node",
       ClusterId(UUID.fromString("517c3a05-9219-471b-a54c-21b7d72f4ae5")),
       version = BuildInfo.version
-    ) {}
+    ) {
+
+}
